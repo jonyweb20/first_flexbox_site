@@ -1,8 +1,14 @@
 @font-face {
     font-family: "NEW";
-    src: url("fonts/19505.otf");
+    src: url("fonts/16103.otf");
+    
 }
-
+@font-face {font-family: "tit";
+    src: url("fonts/16457.otf")
+}
+@font-face {font-family: "reg";
+    src: url("fonts/16815.otf")
+}
 * {
     box-sizing: border-box;
 }
@@ -13,10 +19,14 @@ body {
     font-family: "NEW", sans-serif;
 }
 header{
-    padding: 60px;
     text-align: center;
-    background-color: aquamarine;
-    color: brown;
+    color: #e3f417;
+    background: url(image/918377-desktop-wallpaper-pattern-2048x1152-images.jpg);
+    background-repeat: round;
+    background-size: cover;
+}
+header h1{
+    letter-spacing: 1px;
 }
 nav{
     display: flex;
@@ -65,11 +75,15 @@ main {
     flex: 0 1 70%;
     background-color: chartreuse;
     padding: 20px; 
-    width: 100%;
+    /*width: 100%;*/
 }
-main::before {
-    content: 
+.row h2 h3, main h2{
+    font-family: "tit";   
 }
+.row p, main p{
+    font-family: "reg";   
+}
+
 .fake-img> img{
     width: 100%;
 }
@@ -95,8 +109,9 @@ footer {
     display: none;
 }
     #checkbox-menu:checked + label > a {
-        display: block;
-        text-align: center;
+        display: flex;
+        align-items: center;
+        /*text-align: center;*/
         height: auto;
     }
     label {
